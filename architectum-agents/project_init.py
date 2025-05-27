@@ -30,7 +30,6 @@ def create_project_checklist():
         "project_status": {
             "current_phase": "initialization",
             "last_updated": "auto-generated",
-            "agent_context": "project_planner"
         },
         "phases": {
             "1_ideation": {

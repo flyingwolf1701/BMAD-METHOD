@@ -386,7 +386,7 @@ This plan directs the agent on how to break down large source documents into sma
 
 ## 1. Source Document: PRD (Project Requirements Document)
 
-- **Note to Agent:** Confirm the exact filename of the PRD with the user (e.g., `PRD.md`, `ProjectRequirements.md`, `8-prd-po-updated.md`).
+- **Note to Agent:** Confirm the exact filename of the PRD with the user (e.g., `PRD.md`, `ProjectRequirements.md`, `prdx.y.z.md`).
 
 ### 1.1. Epic Granulation
 
@@ -1237,7 +1237,7 @@ This Project Brief provides the full context for Mealmate. Please start in 'PRD 
 ==================== START: story-tmpl ====================
 # Story {EpicNum}.{StoryNum}: {Short Title Copied from Epic File}
 
-## Status: { Draft | Approved | InProgress | Done }
+## Status: { Draft | Approved | InProgress | Review | Done }
 
 ## Story
 
@@ -1265,6 +1265,7 @@ This Project Brief provides the full context for Mealmate. Please start in 'PRD 
 ### Agent Model Used: `<Agent Model Name/Version>`
 
 ### Completion Notes List
+
 {Any notes about implementation choices, difficulties, or follow-up needed}
 
 ### Change Log

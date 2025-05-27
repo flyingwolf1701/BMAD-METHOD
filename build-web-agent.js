@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 // --- Configuration ---
-const configFilePath = "./build-agent-cfg.js"; // Path relative to this script (__dirname)
+const configFilePath = "./build-web-agent.cfg.js"; // Path relative to this script (__dirname)
 let config;
 try {
   config = require(configFilePath);
@@ -60,7 +60,7 @@ async function main() {
   }
 
   // 2. Determine and validate asset folder root and build directory
-  const workspaceRoot = path.resolve(__dirname, "../../");
+  const workspaceRoot = path.resolve(__dirname, ".");
 
   const assetFolderRootInput = config.asset_root;
   let assetFolderRoot;
@@ -310,7 +310,7 @@ Processing '${subdirName}' directory into '${targetFile}'`);
 Script finished. Output files are in ${buildDir}`);
   console.log(
     `To run this script: node ${path.relative(
-      path.resolve(__dirname, "../.."),
+      path.resolve(__dirname, "."),
       __filename
     )}`
   );
